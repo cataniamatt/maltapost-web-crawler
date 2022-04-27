@@ -17,5 +17,5 @@ Maltese postcodes are a string of 7 characters in which the first three characte
 ## How the script works
 This Python script loops over the list of all the Maltese postcode prefixes that exist and sends a request to the API for each possible postcode number. Example, for a locality named Birkirkara which has a postcode prexis of BKR, the script starts by getting the addresses in BKR1000, then it proceeds to get all the addresses in postcode BKR1001, and it continues to increment until it reaches BKR9999. At this stage, the script then moves to the next locality by changing the postcode prexis.
 
-### Libraries
+### HTTP requests
 The script uses aiohttp to send the HTTP GET requests in conjunction with Asyncio, which allows the script to send multiple HTTP GET requests to the API asynchroniously.
