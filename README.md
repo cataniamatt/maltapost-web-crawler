@@ -5,7 +5,7 @@ This is a script that gets all of the addresses stored within the MaltaPost addr
 
 ### Improvements to make:
 * Exception handling
-* Introduce some sort of limiting to ensure remote server is not overwhelmed
+* Introduce some sort of HTTP request limiting to ensure remote server is not overwhelmed
 * Find a way to get all the addresses with less requests (if possible)
 
 ## Functionality of the postcode finder
