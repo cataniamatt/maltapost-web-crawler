@@ -1,7 +1,12 @@
-# MaltaPost postcode finder web crawler
-This is a script that gets all of the addresses stored within the MaltaPost address database. This translates to roughly all of the addresses in Malta.
+# MaltaPost Address Crawler 
+This is a script that gets all of the addresses stored within the MaltaPost address database by crawling the MaltaPost Postcode Finder API. This translates to roughly all of the addresses in Malta.
 
 ![MaltaPost logo](https://github.com/cataniamatt/maltapost-web-crawler/blob/main/maltapost.png)
+
+### Improvements to make:
+* Exception handling
+* Introduce some sort of limiting to ensure remote server is not overwhelmed
+* Find a way to get all the addresses with less requests (if possible)
 
 ## Functionality of the postcode finder
 The MaltaPost postcode finder API returns a list of addresses that are found within any particular postcode. If the postcode does not exist or is incorrect, the API returns a list of all the addresses located within the closest existing postcode to the one entered. 
