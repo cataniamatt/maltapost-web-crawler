@@ -13,8 +13,8 @@ start_time = time.time()
 addresses = []
 
 postcode_locality = (
-    # 'ATD', 'BBG', 'BKR', 'BML', 'BRG', 'BZN', 'CBD', 'DGL', 'FGR', 'FNT', 'FRN', 'GDJ', 'GHR', 'GRB', 'GSM', 'GSR',
-    # 'GXQ', 'GZR', 'HMR', 'IKL', 'ISL', 'KCM', 'KKP', 'KKR', 'KMN', 'LJA', 'LQA', 'MDN', 'MFN', 'MGR', 'MLH', 'MQB', 'MRS', 'MSD', 'MSK', 'MST', 'MTF', 'MTP', 
+    'ATD', 'BBG', 'BKR', 'BML', 'BRG', 'BZN', 'CBD', 'DGL', 'FGR', 'FNT', 'FRN', 'GDJ', 'GHR', 'GRB', 'GSM', 'GSR',
+    'GXQ', 'GZR', 'HMR', 'IKL', 'ISL', 'KCM', 'KKP', 'KKR', 'KMN', 'LJA', 'LQA', 'MDN', 'MFN', 'MGR', 'MLH', 'MQB', 'MRS', 'MSD', 'MSK', 'MST', 'MTF', 'MTP', 
     'MXK', 'MXR', 'NDR', 'NXR', 'PBK', 'PLA', 'PTA', 'QLA', 'QRD',
     'QRM', 'RBT', 'SCM', 'SFI', 'SGN', 'SGW', 'SLC', 'SLM', 'SLZ', 'SNT', 'SPB', 'STJ', 'SPK', 'SVR', 'SWQ', 'TXN',
     'VCT', 'VLT', 'XBX', 'XJR', 'XLN', 'XRA', 'XWK', 'ZBB', 'ZBG', 'ZBR', 'ZRQ', 'ZTN')
