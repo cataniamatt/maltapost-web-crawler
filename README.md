@@ -1,6 +1,8 @@
 # MaltaPost postcode finder web crawler
 This is a script that gets all of the addresses stored within the MaltaPost address database. This translates to roughly all of the addresses in Malta.
 
+![MaltaPost logo]()
+
 ## Functionality of the postcode finder
 The MaltaPost postcode finder API returns a list of addresses that are found within any particular postcode. If the postcode does not exist or is incorrect, the API returns a list of all the addresses located within the closest existing postcode to the one entered. 
 
@@ -16,7 +18,7 @@ Maltese postcodes are a string of 7 characters in which the first three characte
 ```
 
 ## How the script works
-This Python script loops over the list of all the Maltese postcode prefixes that exist and sends a request to the API for each possible postcode number. Example, for a locality named Birkirkara which has a postcode prexis of BKR, the script starts by getting the addresses in BKR1000, then it proceeds to get all the addresses in postcode BKR1001, and it continues to increment until it reaches BKR9999. At this stage, the script then moves to the next locality by changing the postcode prefix. All addresses are stored within a csv file that is generated.
+This Python script loops over the list of all the Maltese postcode prefixes that exist and sends a request to the API for each possible postcode number. Example, for a locality named Birkirkara which has a postcode prexis of BKR, the script starts by getting the addresses in BKR1000, then it proceeds to get all the addresses in postcode BKR1001, and it continues to increment until it reaches BKR9999. At this stage, the script then moves to the next locality by changing the postcode prefix. All addresses are stored within a MongoDB database running on Docker.
 
 ### HTTP requests
 The script uses aiohttp to send the HTTP GET requests in conjunction with Asyncio, which allows the script to send multiple HTTP GET requests to the API asynchroniously.
